@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Word Count</title>
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <h1 class="title">Word Count</h1>
+          <p class="author">by Marta Dias</p>
+
+          <h4 class="hint">Hover Me</h4>
+        </div>
+        <div class="back">
+          <div class="input-wrapper">
+            <textarea
+              id="input-text"
+              rows="12"
+              placeholder="Input text here... "
+            ></textarea>
+          </div>
+          <p class="info">Please keep the cursor inside this card.</p>
+          <button id="clear">Clear</button>
+          <div class="wrapper">
+            <div class="count">
+              <h5>Word Count</h5>
+              <p id="word-count">0</p>
+            </div>
+            <div class="count">
+              <h5>Characters</h5>
+              <p id="chars-count">0</p>
+            </div>
+            <div class="word">
+              <h5>Longest word</h5>
+              <p id="longest-word">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

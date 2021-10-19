@@ -1,0 +1,19 @@
+TO DO:
+Project:
+  ✔ Design the card @done (17/10/2021, 22:34:36)
+  ✔ Front of the card > TITLE @done (17/10/2021, 22:34:37)
+  ✔ Back of the card > The actual word count(JS) @done (17/10/2021, 22:34:39)
+
+STYLE:
+✔ Main background = #414141 @done (17/10/2021, 22:34:40)
+✔ Glass Card = #F5F4F5 with 70% opacity; #303030 with 30% opacity; @done (17/10/2021, 22:34:41)
+
+GOALS:
+  ☐ Word Count
+
+Strech Goals:
+  ☐ Display longest word count
+  ☐ Add spell check for
+  ✔ Add Character count @done (10/19/2021, 11:00:41 PM)
+  ✔ Add word count @done (10/19/2021, 11:00:55 PM)
+  ☐ Option to display and count whitespace
