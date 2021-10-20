@@ -12,8 +12,12 @@ GOALS:
   ☐ Word Count
 
 Strech Goals:
-  ☐ Display longest word count
+  ✔ Display longest word count @done (20/10/2021, 22:44:51)
   ☐ Add spell check for
   ✔ Add Character count @done (10/19/2021, 11:00:41 PM)
   ✔ Add word count @done (10/19/2021, 11:00:55 PM)
   ☐ Option to display and count whitespace
+  ✔ Add a clear input button @done (20/10/2021, 22:45:25)
+  ✔ Add a reset counters @done (20/10/2021, 22:50:42)
+  ☐ Add Audio when a longest word has been reached?
+  ☐ Add a max characters for the max word

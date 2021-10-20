@@ -1,20 +1,30 @@
 let inputArea = document.getElementById("input-text");
 let wordCount = document.getElementById("word-count");
 let charsCount = document.getElementById("chars-count");
+let whitespace = document.getElementById("whitespace");
 let wordLength = document.getElementById("longest-word");
 let clearBtn = document.getElementById("clear");
 
 inputArea.addEventListener("input", () => {
-  // Counts number of Characters
-  charsCount.textContent = inputArea.value.length;
-  //Remove the whitespace from the string
-  let whitespace = inputArea.value.trim();
-  // Count length of this array,
-  wordCount.textContent = whitespace.split(/\s+/).filter((item) => item).length;
+  const text = inputArea.value;
+  // Counts number of Characters without the whitespace
+  charsCount.textContent = text.replace(/\s+/g, "").length;
+
+  // Count the whitespace characters only
+  // whitespace.textContent = text.value(/\s/);
+
+  // Count words
+  const words = text.match(/(\w+)/g);
+  wordCount.textContent = words.length;
 
   // Check the longest word
- 
+  const longestWord = words.sort((a, b) => b.length - a.length)[0];
+  wordLength.textContent = longestWord;
+});
 
 clearBtn.addEventListener("click", () => {
-  console.log("clicked");
+  inputArea.value = " ";
+  charsCount.textContent = charsCount.value = 0;
+  wordCount.textContent = wordCount.value = 0;
+  wordLength.textContent = wordLength.value = 0;
 });
