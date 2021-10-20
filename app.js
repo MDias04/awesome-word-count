@@ -15,6 +15,6 @@ inputArea.addEventListener("input", () => {
   // Check the longest word
  
 
-// clearBtn.addEventListener("click", () => {
-//   console.log("clicked");
-// });
+clearBtn.addEventListener("click", () => {
+  console.log("clicked");
+});
