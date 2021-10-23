@@ -1,7 +1,6 @@
 let inputArea = document.getElementById("input-text");
 let wordCount = document.getElementById("word-count");
 let charsCount = document.getElementById("chars-count");
-let whitespace = document.getElementById("whitespace");
 let wordLength = document.getElementById("longest-word");
 let clearBtn = document.getElementById("clear");
 
@@ -9,9 +8,6 @@ inputArea.addEventListener("input", () => {
   const text = inputArea.value;
   // Counts number of Characters without the whitespace
   charsCount.textContent = text.replace(/\s+/g, "").length;
-
-  // Count the whitespace characters only
-  // whitespace.textContent = text.value(/\s/);
 
   // Count words
   const words = text.match(/(\w+)/g);
