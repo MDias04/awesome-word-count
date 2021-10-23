@@ -23,7 +23,7 @@ inputArea.addEventListener("input", () => {
 });
 
 clearBtn.addEventListener("click", () => {
-  inputArea.value = " ";
+  inputArea.value = "";
   charsCount.textContent = charsCount.value = 0;
   wordCount.textContent = wordCount.value = 0;
   wordLength.textContent = wordLength.value = 0;
